@@ -1,70 +1,85 @@
 /* Ipad */
 @media screen and (min-width: 650px) {
     /* App bar */
-    .app-bar {  
+    .app-bar__container {  
       grid-template-columns: 1fr auto;
       padding: 8px 32px;
+      height: 60px;
     }
-  
-    .app-bar .app-bar__brand h1 {
+    .app-bar .app-bar__container .app-bar__brand{
+      justify-content: unset;
+    }
+    .app-bar .app-bar__container .app-bar__brand h1 {
       font-size: 1.5em;
     }
   
-    .app-bar .app-bar__menu {
+    .app-bar .app-bar__container .app-bar__menu {
       display: none;
     }
   
-    .app-bar .app-bar__navigation {
+    .app-bar .app-bar__container .app-bar__navigation {
       position: static;
       width: 100%;
+      text-align: unset;
+      height: unset;
     }
-  
-    .app-bar .app-bar__navigation ul li {
+    
+    .app-bar .app-bar__container .app-bar__navigation ul{
+      margin-top: 0;
+      padding-bottom: 0;
+      border-radius: 0;
+      border-bottom: none;
+    }
+
+    .app-bar .app-bar__container .app-bar__navigation ul li {
       display: inline-block;
     }
   
-    .app-bar .app-bar__navigation ul li a {
+    .app-bar .app-bar__container .app-bar__navigation ul li a {
       display: inline-block;
       width: 120px;
       text-align: center;
       margin: 0;
     }
+
+    /* Main content */
+    .col-contentInputResi p{
+      font-size: 20px;
+      width: 370px;
+    }
 }
 
 /* Ipad Pro */
 @media screen and (min-width: 850px) {
-  .app-bar .app-bar__brand {
+  .app-bar .app-bar__container .app-bar__brand {
     justify-content: unset;
   }
 
-  .app-bar .app-bar__brand h1 {
+  .app-bar .app-bar__container .app-bar__brand h1 {
     font-size: 2em;
   }
 
-  .movies {
-    grid-template-columns: repeat(3, 1fr);
+  /* Main Content */
+  .col-contentInputResi p{
+  
   }
 }
 
 /* Notebook */
 @media screen and (min-width: 1200px) {
-  .movies {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  
 }
 
 /* Desktop */
 @media screen and (min-width: 1600px) {
-  body{
+  .container{
     max-width: 1300px;
     margin: 0 auto;
   }
-
-  .app-bar{
-    height: 60px;
-  }
-
-  .movies {
-    grid-template-columns: repeat(5, 1fr);
+  
+  /* Main content */
+  .col-contentInputResi p{
+    font-size: 30px;
+    width: 550px;
   }
 }

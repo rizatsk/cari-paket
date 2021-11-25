@@ -13,70 +13,157 @@
   
   /* AppBar */
   .app-bar {
-    padding: 8px 16px;
-    background-color: transparent;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    gap: 10px;
+    background-color: #002366;
     position: sticky;
     top: 0;
     z-index: 99;
     /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); */
   }
   
-  .app-bar .app-bar__menu {
+  .app-bar__container{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 0px;
+    padding: 8px 5px;
+  }
+
+  .app-bar .app-bar__container .app-bar__menu {
     display: flex;
     align-items: center;
   }
   
-  .app-bar .app-bar__menu button {
+  .app-bar .app-bar__container .app-bar__menu button {
     background-color: transparent;
+    color: white;
     border: none;
-    font-size: 18px;
+    font-size: 24px;
     padding: 10px 15px;
     cursor: pointer;
   }
   
-  .app-bar .app-bar__brand {
+  .app-bar .app-bar__container .app-bar__brand {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
   }
   
-  .app-bar .app-bar__brand h1 {
-    color: #2E4C6D;
+  .app-bar .app-bar__container .app-bar__brand h1 {
+    color: white;
     text-transform: uppercase;
     font-size: 22px;
     user-select: none;
   }
   
-  .app-bar .app-bar__navigation {
+  .app-bar .app-bar__container .app-bar__navigation {
     position: absolute;
-    top: 50px;
-    left: -180px;
-    width: 150px;
+    top: 70px;
+    left: -110%;
+    width: 96%;
+    height: 270px;
     transition: all 0.3s;
     padding: 8px;
-    background-color: white;
+    background-color: #002366;
     overflow: hidden;
+    text-align: center;
   }
   
-  .app-bar .app-bar__navigation.open {
+  .app-bar .app-bar__container .app-bar__navigation.open {
     left: 0;
   }
   
-  .app-bar .app-bar__navigation ul li a { 
+  .app-bar .app-bar__container .app-bar__navigation ul{
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    border-bottom: 4px solid white;
+  }
+
+  .app-bar .app-bar__container .app-bar__navigation ul li a { 
     display: inline-block;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 10px 0px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     width: fit-content;
   }
 
-  .app-bar .app-bar__navigation ul li a:hover {
-    border-bottom: 3px dashed #2E4C6D;
+  .app-bar .app-bar__container .app-bar__navigation ul li a:hover {
+    border-bottom: 3px dashed #ffffff;
   }
+
+ /* Main Content  */
+#mainContent{
+  height: 800px;
+}
+.mainContent__inputResi{
+  background-color: #002366;
+}
+
+.mainContent__inputResi__container{
+  padding: 8px 10px;
+  color: white;
+}
+
+.mainContent__inputResi__container .row__inputResi{
+  display: grid;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.col-contentInputResi{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.col-contentInputResi p{
+  width: 300px;
+}
+
+.col-formInputResi{
+  margin-bottom: 10px;
+}
+
+.col-formInputResi input{
+  border-radius: 5px;
+  padding: 7px 4px;
+  font-size: 15px;
+  outline: rgba(0, 0, 255, 0.529);
+  border: 1px solid white;
+  margin-bottom: 10px;
+}
+
+.col-buttonDeliveryService button{
+  margin: 5px 4px;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  border: 1px solid white;
+  font-weight: bolder;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.col-buttonDeliveryService button:hover{
+  background-color: #dadada;
+}
+
+.col-buttonDeliveryService button.active{
+  background-color: #dadada;
+  outline: 3px solid white;
+  border: 3px solid #15699d;
+}
+
+.button__deliveryService{
+  display: flex;
+  align-items: center;
+}
+
+.button__deliveryService img{
+  margin-right: 8px;
+  margin-left: 3px;
+}
 /* Footer */
 footer {
   padding: 16px;

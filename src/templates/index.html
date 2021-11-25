@@ -9,21 +9,56 @@
 </head>
 <body>
     <header class="app-bar">
-        <div class="app-bar__menu">
-            <button id="hamburgerButton" aria-label="Button navigasi">☰</button>
+        <div class="app-bar__container container">
+            <div class="app-bar__menu">
+                <button id="hamburgerButton" aria-label="Button navigasi">☰</button>
+            </div>
+            <div class="app-bar__brand">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="logo-cekPaket-small.png">
+                    <img src="logo-cekPaket-large.png" alt="Logo cek paket">
+                </picture>
+            </div>
+            <nav id="navigationDrawer" class="app-bar__navigation">
+                <ul>
+                    <li><a href="#/dashboard">Dashboard</a></li>
+                    <li><a href="#/history">History</a></li>
+                    <li><a href="#/about-us">Ubout Us</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="app-bar__brand">
-            <h1>Cari Paket</h1>
-        </div>
-        <nav id="navigationDrawer" class="app-bar__navigation">
-            <ul>
-                <li><a href="#/dashboard">Dashboard</a></li>
-                <li><a href="#/history">History</a></li>
-                <li><a href="#/about-us">Ubout Us</a></li>
-            </ul>
-        </nav>
     </header>
-    <main id="mainContent"></main>
+    <main id="mainContent">
+        <div class="mainContent__inputResi">
+            <div class="mainContent__inputResi__container container">
+                <div class="row__inputResi">
+                    <div class="col-contentInputResi">
+                        <p>lacak banyak paket, di satu tempat dengan mudah.</p>
+                    </div>
+                    <div class="col-formInputResi">
+                        <input type="text" placeholder="Masukan nomor resi">
+                    </div>
+                    <div class="col-buttonDeliveryService">
+                        <button type="button" id="jne" class="active">
+                            <div class="button__deliveryService">
+                                <img src="logo-kurir/jne-small.png" alt="Logo button jne"> JNE
+                            </div> 
+                        </button>
+                        <button id="sicepat">
+                            <div class="button__deliveryService">
+                                <img src="logo-kurir/sicepat-small.png" alt="Logo button si cepat"> Si Cepat
+                            </div> 
+                        </button>
+                        <button id="j&t">
+                            <div class="button__deliveryService">
+                                <img src="logo-kurir/j&t-small.png" alt="Logo button jnt"> J&T
+                            </div> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
         <p>Copyright @Cari Paket 2021</p>
     </footer>
