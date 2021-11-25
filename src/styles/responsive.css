@@ -1,0 +1,70 @@
+/* Ipad */
+@media screen and (min-width: 650px) {
+    /* App bar */
+    .app-bar {  
+      grid-template-columns: 1fr auto;
+      padding: 8px 32px;
+    }
+  
+    .app-bar .app-bar__brand h1 {
+      font-size: 1.5em;
+    }
+  
+    .app-bar .app-bar__menu {
+      display: none;
+    }
+  
+    .app-bar .app-bar__navigation {
+      position: static;
+      width: 100%;
+    }
+  
+    .app-bar .app-bar__navigation ul li {
+      display: inline-block;
+    }
+  
+    .app-bar .app-bar__navigation ul li a {
+      display: inline-block;
+      width: 120px;
+      text-align: center;
+      margin: 0;
+    }
+}
+
+/* Ipad Pro */
+@media screen and (min-width: 850px) {
+  .app-bar .app-bar__brand {
+    justify-content: unset;
+  }
+
+  .app-bar .app-bar__brand h1 {
+    font-size: 2em;
+  }
+
+  .movies {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Notebook */
+@media screen and (min-width: 1200px) {
+  .movies {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1600px) {
+  body{
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .app-bar{
+    height: 60px;
+  }
+
+  .movies {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
