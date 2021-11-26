@@ -93,8 +93,9 @@
 
  /* Main Content  */
 #mainContent{
-  height: 800px;
+  margin-bottom: 60px;
 }
+
 .mainContent__inputResi{
   background-color: #002366;
 }
@@ -167,7 +168,7 @@
 
 /* Receipt Search Result */
 .receipt-search-results__container{
-  margin: 40px 20px;
+  margin: 40px 20px 0 20px;
   padding: 15px;
   box-shadow: 0 0 8px 5px rgba(211, 207, 207, 0.309)
 }
@@ -220,6 +221,63 @@
   color: #002366;
   border: 2px solid #002366;
 }
+
+.col-package-data button.active{
+  background-color: white;
+  color: #002366;
+  border: 2px solid #002366;
+}
+
+/* Track List */
+.track-list__container{
+  margin: 15px 20px 40px 20px;
+  padding: 15px;
+  padding: 15px;
+  box-shadow: 0 0 8px 5px rgba(211, 207, 207, 0.309)
+}
+
+.track-list__header{
+  font-size: 13px;
+  color: rgb(172, 172, 172);
+  margin: 20px 0;
+}
+
+.track-list__card{
+  font-size: 14px;
+  margin: 30px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.track-list__card-icon-bullet{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 1px;
+  left: -3px;
+  background-color: white;
+  border: 2px solid #002366;
+}
+
+.track-list__card-icon-bullet.active{
+  background-color: #002366;
+  border: 2px solid #002366;
+}
+
+.track-list__card-icon{
+  position: absolute;
+  width: 1px;
+  height: 95%;
+  top: 25px;
+  left: 3px;
+  background-color: #002366;
+}
+
+.track-list__card-time{
+  color: #5a6477;
+}
+
 /* Footer */
 footer {
   padding: 16px;
@@ -228,9 +286,5 @@ footer {
 footer p {
   text-align: center;
   color: #aaaaaa;
-}
-
-footer p a {
-  color: #2E4C6D;
-  text-decoration: none;
+  font-size: 12px;
 }
