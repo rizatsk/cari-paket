@@ -122,7 +122,7 @@
 }
 
 .col-formInputResi{
-  margin-bottom: 10px;
+  margin: 15px 0;
 }
 
 .col-formInputResi input{
@@ -163,6 +163,62 @@
 .button__deliveryService img{
   margin-right: 8px;
   margin-left: 3px;
+}
+
+/* Receipt Search Result */
+.receipt-search-results__container{
+  margin: 40px 20px;
+  padding: 15px;
+  box-shadow: 0 0 8px 5px rgba(211, 207, 207, 0.309)
+}
+
+.col-delivery-status{
+  border-bottom: 2px solid rgb(172, 172, 172);
+}
+
+.delivery-status{
+  margin: 10px 0;
+}
+
+.delivery-status__courier{
+  margin: 10px 0;
+  display: flex;
+  align-content: center;
+}
+
+.delivery-status__courier span{
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+.col-package-data{
+  margin: 20px 0;
+}
+
+.package-data__header{
+  font-size: 13px;
+  color: rgb(172, 172, 172);
+  margin: 10px 0;
+}
+
+.package-data__body{
+  font-size: 14px;
+}
+
+.col-package-data button{
+  margin-top: 20px;
+  background-color: #002366;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.col-package-data button:hover{
+  background-color: white;
+  color: #002366;
+  border: 2px solid #002366;
 }
 /* Footer */
 footer {

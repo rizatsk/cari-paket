@@ -47,6 +47,22 @@
       font-size: 20px;
       width: 370px;
     }
+
+   /* Receipt Search Result */
+  .col-delivery-status{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col-package-data{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col-package-data button{
+    margin-top: 20px;
+    margin-right: 70%;
+  }
 }
 
 /* Ipad Pro */
@@ -59,15 +75,28 @@
     font-size: 2em;
   }
 
-  /* Main Content */
-  .col-contentInputResi p{
-  
+  .receipt-search-results__container{
+    width: 70%;
+    margin: 40px auto;
   }
 }
 
 /* Notebook */
 @media screen and (min-width: 1200px) {
-  
+   /* Receipt Search Result */
+  .col-package-data{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  }
+
+  .receipt-search-results__container{
+    width: 90%;
+    margin: 40px auto;
+  }
+
+  .col-package-data button{
+    margin-right: 40%;
+  }
 }
 
 /* Desktop */
@@ -81,5 +110,9 @@
   .col-contentInputResi p{
     font-size: 30px;
     width: 550px;
+  }
+
+  .receipt-search-results__container{
+    margin-top: 50px;
   }
 }
