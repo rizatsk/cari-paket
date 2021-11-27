@@ -9,6 +9,7 @@ import {
   nothingNoResi,
   trackList,
 } from '../views/templates/template-creator';
+import ShowTrackList from '../utils/show-track-list';
 
 const contentTrackResult = document.querySelector('#contentTrackResult');
 
@@ -40,6 +41,14 @@ const renderTrackingDataResults = (dataTracking, courier) => {
   historyTrackings.forEach((history) => {
     document.querySelector('.track-list__body').innerHTML += trackList(history);
   });
+
+  const button = document.querySelector('#buttonDetailTrack');
+  const content = document.querySelector('.content__track-list');
+
+  ShowTrackList(button, content);
+  // button.addEventListener('click', (event) => {
+  //   content.classList.toggle('hidden');
+  // });
 };
 
 const renderErrorTrackingDataResults = () => {

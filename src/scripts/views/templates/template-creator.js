@@ -77,7 +77,7 @@ const contenReceiptSearchResults = (dataTracking, courier) => `
                 </div>
             </div>
             <div class="package-data__button">
-                <button>DETAIL</button>
+                <button id="buttonDetailTrack">DETAIL</button>
             </div>
         </div>
     </div>
@@ -85,7 +85,7 @@ const contenReceiptSearchResults = (dataTracking, courier) => `
 `;
 
 const contentTrackList = () => `
-<div class="content__track-list">
+<div class="content__track-list hidden">
   <div class="track-list__container container">
       <div class="track-list__header">
           Detail Riwayat Track

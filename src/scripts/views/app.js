@@ -1,7 +1,9 @@
+/* eslint-disable new-cap */
 /* eslint-disable no-unused-vars */
 import routes from '../routes/routes';
 import UrlParser from '../routes/url-parser';
 import DrawerInitiator from '../utils/drawer-inititator';
+import ShowTrackList from '../utils/show-track-list';
 
 /* eslint-disable require-jsdoc */
 class App {
@@ -21,10 +23,14 @@ class App {
     });
   }
 
+  detailClick() {
+    // ShowTrackList(button, content);
+  }
+
   async renderPage() {
     const url = UrlParser.parseActiveUtlWithCombiner();
     const page = routes[url];
-    this._content.innerHTML += await page.render();
+    this._content.innerHTML = await page.render();
     await page.afterRender();
   }
 }
