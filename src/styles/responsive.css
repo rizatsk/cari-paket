@@ -21,7 +21,7 @@
       position: static;
       width: 100%;
       text-align: unset;
-      height: unset;
+      height: fit-content;
     }
     
     .app-bar .app-bar__container .app-bar__navigation ul{
@@ -63,6 +63,11 @@
     margin-top: 20px;
     margin-right: 70%;
   }
+
+  /* Track List Card */
+  .track-list__card{
+    margin: 30px 50px;
+  }
 }
 
 /* Ipad Pro */
@@ -76,13 +81,13 @@
   }
 
   .receipt-search-results__container{
-    width: 70%;
+    width: 60%;
     margin: 10px auto;
     margin-top: 40px;
   }
 
   .track-list__container{
-    width: 70%;
+    width: 60%;
     margin: 15px auto;
   }
 }
@@ -90,24 +95,12 @@
 /* Notebook */
 @media screen and (min-width: 1200px) {
    /* Receipt Search Result */
-  .col-package-data{
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-  }
-
-  .receipt-search-results__container{
-    width: 90%;
-    margin: 10px auto;
-    margin-top: 40px;
-  }
-
-  .col-package-data button{
-    margin-right: 40%;
+   .receipt-search-results__container{
+    width: 60%;
   }
 
   .track-list__container{
-    width: 90%;
-    margin: 15px auto;
+    width: 60%;
   }
 
   footer p{
@@ -129,10 +122,12 @@
   }
 
   .receipt-search-results__container{
+    width: 45%;
     margin-top: 50px;
   }
 
   .track-list__container{
+    width: 45%;
     margin-top: 15px;
   }
 }

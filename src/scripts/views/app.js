@@ -1,4 +1,6 @@
 /* eslint-disable no-unused-vars */
+import routes from '../routes/routes';
+import UrlParser from '../routes/url-parser';
 import DrawerInitiator from '../utils/drawer-inititator';
 
 /* eslint-disable require-jsdoc */
@@ -17,6 +19,13 @@ class App {
       drawer: this._drawer,
       content: this._content,
     });
+  }
+
+  async renderPage() {
+    const url = UrlParser.parseActiveUtlWithCombiner();
+    const page = routes[url];
+    this._content.innerHTML += await page.render();
+    await page.afterRender();
   }
 }
 
