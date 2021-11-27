@@ -29,6 +29,7 @@ const pageInputResi = () => `
         </div>
     </div>
 </div>
+<div id="contentTrackResult"></div>
 `;
 
 const contenReceiptSearchResults = (dataTracking, courier) => `

@@ -11,8 +11,6 @@ import {
 } from '../views/templates/template-creator';
 import ShowTrackList from '../utils/show-track-list';
 
-const contentTrackResult = document.querySelector('#contentTrackResult');
-
 const TrackingDataResults = async (numberResi, courier) => {
   try {
     const respone = await fetch(API_ENDPOINT.TRACKING(numberResi, courier));
@@ -31,7 +29,9 @@ const TrackingDataResults = async (numberResi, courier) => {
   }
 };
 
+
 const renderTrackingDataResults = (dataTracking, courier) => {
+  const contentTrackResult = document.querySelector('#contentTrackResult');
   const historyTrackings = dataTracking.history;
 
   contentTrackResult.innerHTML = '';
@@ -46,17 +46,16 @@ const renderTrackingDataResults = (dataTracking, courier) => {
   const content = document.querySelector('.content__track-list');
 
   ShowTrackList(button, content);
-  // button.addEventListener('click', (event) => {
-  //   content.classList.toggle('hidden');
-  // });
 };
 
 const renderErrorTrackingDataResults = () => {
+  const contentTrackResult = document.querySelector('#contentTrackResult');
   contentTrackResult.innerHTML = '';
   contentTrackResult.innerHTML += nothingNoResi();
 };
 
 const renderNothingInternet = () => {
+  const contentTrackResult = document.querySelector('#contentTrackResult');
   contentTrackResult.innerHTML = '';
   contentTrackResult.innerHTML += nothingInternet();
 };
