@@ -97,9 +97,10 @@ const contentTrackList = () => `
   </div>
 </div>`;
 
-const trackList = (history) => `
+const trackList = (history, historyTrackings) => `
 <div class="track-list__card">
-    <div class="track-list__card-icon-bullet"></div>
+    <div class="track-list__card-icon-bullet ${history.date == historyTrackings[0].date ? 'active' : ''} "></div>
+    <div class="${history.date == historyTrackings.slice(-1)[0].date ? '' : 'track-list__card-icon'}"></div>
     <div class="track-list__card-time">
         ${history.date}
     </div>

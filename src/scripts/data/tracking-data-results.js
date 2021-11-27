@@ -39,7 +39,7 @@ const renderTrackingDataResults = (dataTracking, courier) => {
   contentTrackResult.innerHTML += contentTrackList();
 
   historyTrackings.forEach((history) => {
-    document.querySelector('.track-list__body').innerHTML += trackList(history);
+    document.querySelector('.track-list__body').innerHTML += trackList(history, historyTrackings);
   });
 
   const button = document.querySelector('#buttonDetailTrack');
