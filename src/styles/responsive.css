@@ -65,8 +65,38 @@
   }
 
   /* Track List Card */
+  .contentTrackResult__start-load .header{
+    font-size: 17px;
+  }
+
+  .contentTrackResult__start-load span{
+    font-size: 14px;
+  }
+
   .track-list__card{
     margin: 30px 50px;
+  }
+
+  /* Nothing Data */
+  .nothingData{
+    font-size: 14px;
+  }
+
+  .nothingData h2{
+    font-size: 17px;
+  }
+
+  .loader{
+    width: 44px;
+    height: 44px;
+  }
+
+  .mainContent__cariPaket{
+    margin: 40px 120px;
+  }
+
+  .mainContent__cariPaket p {
+    font-size: 14px;
   }
 }
 
@@ -80,6 +110,19 @@
     font-size: 2em;
   }
 
+  .contentTrackResult__start-load .header,
+  .mainContent__cariPaket h2,
+  .nothingData h2 {
+    font-size: 19px;
+  }
+
+  .contentTrackResult__start-load span,
+  .mainContent__cariPaket p, 
+  .nothingData p,
+  .loader-span {
+    font-size: 15px;
+  }
+
   .receipt-search-results__container{
     width: 60%;
     margin: 10px auto;
@@ -90,6 +133,12 @@
     width: 60%;
     margin: 15px auto;
   }
+
+  .mainContent__cariPaket{
+    text-align: center;
+    margin: 60px 200px;
+  }
+
 }
 
 /* Notebook */
@@ -101,6 +150,10 @@
 
   .track-list__container{
     width: 60%;
+  }
+
+  .mainContent__cariPaket{
+    margin: 60px 30%;
   }
 
   footer p{
@@ -117,7 +170,7 @@
   
   /* Main content */
   .col-contentInputResi p{
-    font-size: 30px;
+    font-size: 25px;
     width: 550px;
   }
 
@@ -129,5 +182,9 @@
   .track-list__container{
     width: 45%;
     margin-top: 15px;
+  }
+
+  .mainContent__cariPaket{
+    margin: 60px 600px;
   }
 }

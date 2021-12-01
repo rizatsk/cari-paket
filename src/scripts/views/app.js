@@ -3,7 +3,6 @@
 import routes from '../routes/routes';
 import UrlParser from '../routes/url-parser';
 import DrawerInitiator from '../utils/drawer-inititator';
-import ShowTrackList from '../utils/show-track-list';
 
 /* eslint-disable require-jsdoc */
 class App {
@@ -21,10 +20,6 @@ class App {
       drawer: this._drawer,
       content: this._content,
     });
-  }
-
-  detailClick() {
-    // ShowTrackList(button, content);
   }
 
   async renderPage() {

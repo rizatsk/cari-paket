@@ -1,5 +1,5 @@
 const CONFIG = {
-  KEY: 'd631e7075fbab1757ed277de4283b5138080de85a4ab6007b717d52063876f2b',
+  KEY: '9b19b2f8d8700704ef70701fc08d02780136c4f6b5ded8cd25081d27d05130b5',
   BASE_URL: 'https://api.binderbyte.com/v1/track',
 };
 

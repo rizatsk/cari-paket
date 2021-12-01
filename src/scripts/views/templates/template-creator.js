@@ -29,7 +29,23 @@ const pageInputResi = () => `
         </div>
     </div>
 </div>
-<div id="contentTrackResult"></div>
+<div id="contentTrackResult">
+    <div class="contentTrackResult__start-load">
+        <p class="header">belum ada paket</p>
+        <span>masukan nomor resi dan pilih kurir yang digunakan</span>
+    </div>
+</div>
+<div class="mainContent__cariPaket">
+    <h2>Cari Paket</h2>
+    <p>Mencari paket dengan mudah dalam 1 halaman website</p>
+    <p>dapat mencari paket di berbagai jasa pengiriman yang tersedia tanpa 
+        lagi harus membuka banyak website untuk cek paket di setiap masing 
+        masing jasa pengiriman.
+    </p> 
+    <p>menyediakan riwayat pencarian paket.
+        dapat melihat riwayat hasil pencarian paket anda secara offline.
+    </p>
+</div>
 `;
 
 const contenReceiptSearchResults = (dataTracking, courier) => `
@@ -131,8 +147,10 @@ const nothingInternet = () => `
 const pending = () => `
 <div class="container">
     <div class="pending">
-        <h2>Loading</h2>
-        <p>harap tunggu...</p>
+        <div class="loader"></div>
+        <div class="loader-span">
+            <span>Sedang Mencari Nomor Resi</span>
+        </div>
     </div>
 </div>
 `;

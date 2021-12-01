@@ -11,6 +11,10 @@
     flex-direction: column;
   }
   
+  .hidden{
+    display: none;
+  }
+  
   /* AppBar */
   .app-bar {
     background-color: #002366;
@@ -226,15 +230,47 @@
 }
 
 /* Track List */
+.contentTrackResult__start-load{
+  margin: 50px 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.contentTrackResult__start-load .header{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.contentTrackResult__start-load span{
+  text-transform: capitalize;
+  padding: 10px 20px;
+}
+
+.mainContent__cariPaket{
+  margin: 40px 20px;
+  font-size: 13px;
+  display: grid;
+  justify-content: center;
+}
+
+.mainContent__cariPaket h2{
+  font-size: 18px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-bottom: 4px dashed #002366;
+}
+
+.mainContent__cariPaket p{
+  text-transform: capitalize;
+  padding: 10px 20px;
+}
+
 .track-list__container{
   margin: 15px 20px 40px 20px;
   padding: 15px;
   padding: 15px;
   box-shadow: 0 0 8px 5px rgba(211, 207, 207, 0.309)
-}
-
-.hidden{
-  display: none;
 }
 
 .track-list__header{
@@ -287,12 +323,33 @@
   font-size: 14px;
 }
 
+.nothingData h2{
+  font-size: 18px;
+}
+
 .pending{
   margin: 60px 0;
-  text-align: center;
+  display: grid;
+  justify-content: center;
   text-transform: capitalize;
   font-size: 14px;
 }
+
+.loader{
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 10px auto;
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* Footer */
 footer {
   padding: 16px;
