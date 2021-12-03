@@ -38,6 +38,7 @@ const pageInputResi = () => `
 <div class="mainContent__cariPaket">
     <h2>Cari Paket</h2>
     <p>Mencari paket dengan mudah dalam 1 halaman website</p>
+    <p>dapat mencari paket secara offline kalau sudah pernah mencarinya</p>
     <p>dapat mencari paket di berbagai jasa pengiriman yang tersedia tanpa 
         lagi harus membuka banyak website untuk cek paket di setiap masing 
         masing jasa pengiriman.
