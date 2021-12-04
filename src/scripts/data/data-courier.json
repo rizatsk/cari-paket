@@ -1,0 +1,56 @@
+{
+    "courier" : [
+        {
+            "id" : "jne",
+            "courier" : "JNE"
+        },
+        {
+            "id" : "sicepat",
+            "courier" : "Si Cepat"
+        },
+        {
+            "id" : "jnt",
+            "courier" : "J&T"
+        },
+        {
+            "id" : "pos",
+            "courier" : "POS"
+        },
+        {
+            "id" : "tiki",
+            "courier" : "TIKI"
+        },
+        {
+            "id" : "anteraja",
+            "courier" : "AnterAja"
+        },
+        {
+            "id" : "wahana",
+            "courier" : "Wahana"
+        },
+        {
+            "id" : "ninja",
+            "courier" : "Ninja"
+        },
+        {
+            "id" : "spx",
+            "courier" : "Shopee Express"
+        },
+        {
+            "id" : "pcp",
+            "courier" : "PCP"
+        },
+        {
+            "id" : "jet",
+            "courier" : "JET"
+        },
+        {
+            "id" : "ide",
+            "courier" : "ID Express"
+        },
+        {
+            "id" : "lion",
+            "courier" : "Lion"
+        }
+    ]
+}

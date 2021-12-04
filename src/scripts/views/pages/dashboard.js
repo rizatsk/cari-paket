@@ -1,11 +1,12 @@
 /* eslint-disable new-cap */
 /* eslint-disable max-len */
-/* eslint-disable no-unused-vars */
+
 import {
   pageInputResi,
-  pending,
 } from '../templates/template-creator';
-import TrackingDataResults from '../../data/tracking-data-results';
+import dataCourier from '../../data/data-courier.json';
+import RenderButtonCourier from '../../render/render-button-courier';
+import TrackingInitiator from '../../utils/tracking-initiator';
 
 
 const Dashboard = {
@@ -14,28 +15,13 @@ const Dashboard = {
   },
 
   async afterRender() {
+    const colButtonDeliveryService = document.querySelector('.col-buttonDeliveryService');
+    RenderButtonCourier(dataCourier, colButtonDeliveryService);
+
     const enterReceiptNumber = document.querySelector('#receiptNumberResi');
     const courierButtons = document.querySelectorAll('.button-courier');
     const contentTrackResult = document.querySelector('#contentTrackResult');
-
-    courierButtons.forEach((courierButton) => {
-      courierButton.addEventListener('click', async () => {
-        const courier = courierButton.id;
-        const numberResi = enterReceiptNumber.value;
-
-        if (!numberResi) {
-          console.log('Anda belum memasukan nomor resi !');
-          return false;
-        }
-
-        contentTrackResult.scrollIntoView(); // untuk focus ketika data resi dicari
-
-        contentTrackResult.innerHTML = '';
-        contentTrackResult.innerHTML += pending();
-
-        TrackingDataResults(numberResi, courier);
-      });
-    });
+    TrackingInitiator(courierButtons, enterReceiptNumber, contentTrackResult);
   },
 };
 
