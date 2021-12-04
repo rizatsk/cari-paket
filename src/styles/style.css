@@ -21,7 +21,6 @@
     position: sticky;
     top: 0;
     z-index: 99;
-    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); */
   }
   
   .app-bar__container{
@@ -63,7 +62,6 @@
     top: 70px;
     left: -110%;
     width: 96%;
-    height: 270px;
     transition: all 0.3s;
     padding: 8px;
     background-color: #002366;
@@ -77,7 +75,7 @@
   
   .app-bar .app-bar__container .app-bar__navigation ul{
     margin-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     border-radius: 10px;
     border-bottom: 4px solid white;
   }
@@ -87,7 +85,7 @@
     text-decoration: none;
     color: white;
     padding: 10px 0px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: fit-content;
   }
 
@@ -107,7 +105,7 @@
 
 .mainContent__inputResi__container .row__inputResi{
   display: grid;
-  margin: 20px 0;
+  margin: 20px 10px;
   text-align: center;
 }
 
@@ -135,14 +133,21 @@
   margin-bottom: 10px;
 }
 
+.col-buttonDeliveryService{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 10px;
+}
+
 .col-buttonDeliveryService button{
-  margin: 5px 4px;
   background-color: white;
+  padding: 6px 1px 6px 0;
+  box-sizing: border-box;
   color: black;
   border-radius: 8px;
   border: 1px solid white;
   font-weight: bolder;
-  padding-right: 5px;
   cursor: pointer;
 }
 

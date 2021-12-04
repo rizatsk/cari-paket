@@ -48,6 +48,10 @@
       width: 370px;
     }
 
+    .col-buttonDeliveryService{
+      grid-template-columns: repeat(4, auto);
+    }
+
    /* Receipt Search Result */
   .col-delivery-status{
     display: flex;
@@ -154,6 +158,12 @@
 
   .mainContent__cariPaket{
     margin: 60px 30%;
+  }
+
+  .col-buttonDeliveryService{
+    grid-template-columns: repeat(6, auto);
+    margin-bottom: 50px;
+    margin-top: 20px;
   }
 
   footer p{

@@ -1,5 +1,5 @@
 const CONFIG = {
-  KEY: '9b19b2f8d8700704ef70701fc08d02780136c4f6b5ded8cd25081d27d05130b5',
+  KEY: 'f90e61d915d316aa4b4321c8ccf3d2a516c8e0b63caa3651e3af8dae84b24e84',
   BASE_URL: 'https://api.binderbyte.com/v1/track',
   CACHE_NAME: 'CariPaket-V1',
 };

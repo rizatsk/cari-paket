@@ -7,22 +7,85 @@ const pageInputResi = () => `
                 <p>lacak banyak paket, di satu tempat dengan mudah.</p>
             </div>
             <div class="col-formInputResi">
-                <input type="text" id="receiptNumberResi" placeholder="Masukan nomor resi">
+                <input type="search" id="receiptNumberResi" placeholder="Masukan nomor resi">
             </div>
             <div class="col-buttonDeliveryService">
                 <button id="jne" class="button-courier">
                     <div class="button__deliveryService">
-                        <img src="logo-kurir/jne-small.png" alt="Logo button jne"> JNE
+                        <img src="logo-kurir/jne-small.png" alt="Logo button jne">
+                        <span>JNE</span> 
                     </div> 
                 </button>
                 <button id="sicepat" class="button-courier">
                     <div class="button__deliveryService">
-                        <img src="logo-kurir/sicepat-small.png" alt="Logo button si cepat"> Si Cepat
+                        <img src="logo-kurir/sicepat-small.png" alt="Logo button si cepat"> 
+                        <span>Si Cepat</span>
                     </div> 
                 </button>
                 <button id="jnt" class="button-courier">
                     <div class="button__deliveryService">
-                        <img src="logo-kurir/jnt-small.png" alt="Logo button jnt"> J&T
+                        <img src="logo-kurir/jnt-small.png" alt="Logo button jnt"> 
+                        <span>J&T</span>
+                    </div> 
+                </button>
+                <button id="pos" class="button-courier">
+                    <div class="button__deliveryService">
+                        <img src="logo-kurir/pos-indonesia-small.png" alt="Logo button pos"> 
+                        <span>POS</span>
+                    </div> 
+                </button>
+                <button id="tiki" class="button-courier">
+                    <div class="button__deliveryService">
+                        <img src="logo-kurir/tiki-small.png" alt="Logo button tiki">
+                        <span>TIKI</span>
+                    </div> 
+                </button>
+                <button id="anteraja" class="button-courier">
+                    <div class="button__deliveryService">
+                        <img src="logo-kurir/anteraja-small.png" alt="Logo button AnterAja"> 
+                        <span>AnterAja</span>
+                    </div> 
+                </button>
+                <button id="wahana" class="button-courier">
+                    <div class="button__deliveryService">
+                        <img src="logo-kurir/wahana-small.png" alt="Logo button wahana"> 
+                        <span>Wahana</span>
+                    </div> 
+                </button>
+                <button id="ninja" class="button-courier">
+                    <div class="button__deliveryService">
+                        <img src="logo-kurir/ninja-small.png" alt="Logo button ninja"> 
+                        <span>Ninja</span>
+                    </div> 
+                </button>
+                <button id="spx" class="button-courier">
+                    <div class="button__deliveryService">
+                        <img src="logo-kurir/shopee-small.png" alt="Logo button Shopee Express"> 
+                        <span>Shopee Express</span>
+                    </div> 
+                </button>
+                <button id="pcp" class="button-courier">
+                    <div class="button__deliveryService">
+                        <img src="logo-kurir/pcp-small.png" alt="Logo button pcp"> 
+                        <span>PCP</span>
+                    </div> 
+                </button>
+                <button id="jet" class="button-courier">
+                    <div class="button__deliveryService">
+                        <img src="logo-kurir/jet-small.png" alt="Logo button jet"> 
+                        <span>JET</span>
+                    </div> 
+                </button>
+                <button id="ide" class="button-courier">
+                    <div class="button__deliveryService">
+                        <img src="logo-kurir/id-express-small.png" alt="Logo button ID Express"> 
+                        <span>ID Express</span>
+                    </div> 
+                </button>
+                <button id="lion" class="button-courier">
+                    <div class="button__deliveryService">
+                        <img src="logo-kurir/lion-small.png" alt="Logo button lion"> 
+                        <span>Lion</span>
                     </div> 
                 </button>
             </div>

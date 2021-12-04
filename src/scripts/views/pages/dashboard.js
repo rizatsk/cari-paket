@@ -28,6 +28,8 @@ const Dashboard = {
           return false;
         }
 
+        contentTrackResult.scrollIntoView(); // untuk focus ketika data resi dicari
+
         contentTrackResult.innerHTML = '';
         contentTrackResult.innerHTML += pending();
 
