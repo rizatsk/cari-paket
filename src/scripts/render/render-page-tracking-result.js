@@ -27,6 +27,24 @@ const renderTrackingDataResults = (dataTracking) => {
   ShowTrackList(button, content);
 };
 
+const renderTrackingDataResultsFromHistory = (dataTracking) => {
+  const contentTrackResult = document.querySelector('#contentTrackResult');
+  const historyTrackings = dataTracking.history;
+
+  contentTrackResult.innerHTML = '';
+  contentTrackResult.innerHTML += contenReceiptSearchResults(dataTracking);
+  // contentTrackResult.innerHTML += contentTrackList();
+
+  // historyTrackings.forEach((history) => {
+  //   document.querySelector('.track-list__body').innerHTML += trackList(history, historyTrackings);
+  // });
+
+  // const button = document.querySelector('#buttonDetailTrack');
+  // const content = document.querySelector('.content__track-list');
+
+  // ShowTrackList(button, content);
+};
+
 const renderErrorTrackingDataResults = () => {
   const contentTrackResult = document.querySelector('#contentTrackResult');
   contentTrackResult.innerHTML = '';
@@ -43,4 +61,5 @@ export {
   renderTrackingDataResults,
   renderErrorTrackingDataResults,
   renderNothingInternet,
+  renderTrackingDataResultsFromHistory,
 };

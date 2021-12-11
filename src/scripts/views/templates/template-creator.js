@@ -96,6 +96,8 @@ const contenReceiptSearchResults = (dataTracking) => `
 </div>
 `;
 
+
+
 const contentTrackList = () => `
 <div class="content__track-list hidden">
   <div class="track-list__container container">
@@ -120,6 +122,18 @@ const trackList = (history, historyTrackings) => `
     </div>
 </div>
 `;
+
+const historyPgTemplate =(data) =>`
+<div class="historyContainerRow"> 
+   <div class="box-resi">
+    <a href="${`#/detailHistory/${data.awb}`}" >${data.awb}</a>
+
+   </div>
+
+   <div class="box-waktu">
+   </div>
+   `;
+
 
 const nothingNoResi = () => `
 <div class="container">
@@ -159,4 +173,6 @@ export {
   nothingNoResi,
   nothingInternet,
   pending,
+  historyPgTemplate,
+
 };

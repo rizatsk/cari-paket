@@ -104,6 +104,33 @@
   }
 }
 
+/* History-Page */
+
+.historyContainerRow{
+  display:flex;
+  width: 80%;
+  height: 40px;
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 15px;
+  margin : 10px auto;
+  /* margin: 0 auto;  */
+  
+}
+
+.box-resi{
+  flex-grow: 1;
+  margin: 3px;
+  /* border: 2px solid red; */
+  border-radius: 10px;
+  max-width: 30%;
+}
+.box-waktu{
+  flex-grow: 4;
+  margin: 3px;
+  /* border: 2px solid blue; */
+  border-radius: 10px;
+}
 /* Ipad Pro */
 @media screen and (min-width: 850px) {
   .app-bar .app-bar__container .app-bar__brand {
