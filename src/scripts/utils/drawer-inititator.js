@@ -1,24 +1,17 @@
-/* eslint-disable no-unused-vars */
 const DrawerInitiator = {
-  init({button, drawer, content}) {
+  init({button, drawer, buttonOpen, buttonClose}) {
     button.addEventListener('click', (event) => {
-      this._toggleDrawer(event, drawer);
-    });
-
-    content.addEventListener('click', (event) => {
-      this._closeDrawer(event, drawer);
+      this._toggleDrawer(event, drawer, buttonOpen, buttonClose);
     });
   },
 
-  _toggleDrawer(event, drawer) {
+  _toggleDrawer(event, drawer, buttonOpen, buttonClose) {
     event.stopPropagation();
     drawer.classList.toggle('open');
+    buttonOpen.classList.toggle('hidden');
+    buttonClose.classList.toggle('hidden');
   },
 
-  _closeDrawer(event, drawer) {
-    event.stopPropagation();
-    drawer.classList.remove('open');
-  },
 };
 
 export default DrawerInitiator;
