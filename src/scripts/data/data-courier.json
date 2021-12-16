@@ -51,6 +51,14 @@
         {
             "id" : "lion",
             "courier" : "Lion"
+        },
+        {
+            "id" : "kgx",
+            "courier" : "KGX press"
+        },
+        {
+            "id" : "first",
+            "courier" : "First Logistics"
         }
     ]
 }
