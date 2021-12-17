@@ -9,6 +9,6 @@ const HistoryPaketInitiator = {
   async _renderHistoryPaket() {
     await this._historyPaket.putPaket(this._paket);
   },
-};
 
+};
 export default HistoryPaketInitiator;

@@ -96,8 +96,6 @@ const contenReceiptSearchResults = (dataTracking) => `
 </div>
 `;
 
-
-
 const contentTrackList = () => `
 <div class="content__track-list hidden">
   <div class="track-list__container container">
@@ -122,18 +120,6 @@ const trackList = (history, historyTrackings) => `
     </div>
 </div>
 `;
-
-const historyPgTemplate =(data) =>`
-<div class="historyContainerRow"> 
-   <div class="box-resi">
-    <a href="${`#/detailHistory/${data.awb}`}" >${data.awb}</a>
-
-   </div>
-
-   <div class="box-waktu">
-   </div>
-   `;
-
 
 const nothingNoResi = () => `
 <div class="container">
@@ -164,6 +150,91 @@ const pending = () => `
 </div>
 `;
 
+const pageAboutUs = () => `
+<div class="mainContent__aboutus">
+    <div class="mainContent__cariPaket">
+        <h2>Cari Paket</h2>
+        <p>Mencari paket dengan mudah dalam 1 halaman website</p>
+        <p>dapat mencari paket secara offline kalau sudah pernah mencarinya</p>
+        <p>dapat mencari paket di berbagai jasa pengiriman yang tersedia tanpa 
+            lagi harus membuka banyak website untuk cek paket di setiap masing 
+            masing jasa pengiriman.
+        </p> 
+        <p>menyediakan riwayat pencarian paket.
+            dapat melihat riwayat hasil pencarian paket anda secara offline.
+        </p>
+</div>
+    <div class="container aboutus__content">
+        <h2>Tentang Team Kami</h2>
+        <div class="aboutus__content__team">
+        </div>
+    </div>
+</div>
+`;
+
+const cardTeam = (team) => `
+<div class="aboutus__team_card">
+    <div class="aboutus__team_card-header">
+        <img src="images/${team.photo}" alt="${team.photo}">
+    </div>
+    <div class="aboutus__teamw_card-body">
+        <h5>${team.nama}</h5>
+        <span>${team.pekerjaan}</span>
+        <h6> 
+            <a href="https://${team.github}" target="_blank" rel="noopener">${team.github}</a>
+        </h6>
+        <p>${team.deskripsi}</p>
+    </div>
+</div>
+`;
+
+
+const historyPgTemplate =(data) =>`
+
+<button>
+<p>delete All</p> 
+</button>
+<div class="historyContainerRow"> 
+   <div class="box-resi">
+   <a href="${`#/detail/${data.awb}`}" >${data.awb}</a>
+   <button>
+   <p>delete</p> 
+</button>
+<button>
+   <p>find</p>
+</button>
+   </div>
+   <div class="box-waktu">
+
+   `;
+//    <div class="box-waktu">
+// </div>
+   const dashboardHistory = () => `
+   <h1 Id=header >Detail History /kode awb/</h1>
+   <div id="contentTrackResult">
+       <div class="contentTrackResult__start-load">
+           <p class="header">belum ada paket</p>
+           <span>masukan nomor resi dan pilih kurir yang digunakan</span>
+       </div>
+   </div>
+   <div class="mainContent__cariPaket">
+       <h2>Cari Paket</h2>
+       <p>Mencari paket dengan mudah dalam 1 halaman website</p>
+       <p>dapat mencari paket secara offline kalau sudah pernah mencarinya</p>
+       <p>dapat mencari paket di berbagai jasa pengiriman yang tersedia tanpa 
+           lagi harus membuka banyak website untuk cek paket di setiap masing 
+           masing jasa pengiriman.
+       </p> 
+       <p>menyediakan riwayat pencarian paket.
+           dapat melihat riwayat hasil pencarian paket anda secara offline.
+       </p>
+   </div>
+   <div class="historyContainer"> </div>
+   `;
+   const headerAWB = (awb)=>`
+   <h1 Id=header >Detail History ${awb}</h1>
+   `;
+
 export {
   pageInputResi,
   buttonDeliveryService,
@@ -173,6 +244,9 @@ export {
   nothingNoResi,
   nothingInternet,
   pending,
+  pageAboutUs,
+  cardTeam,
   historyPgTemplate,
-
+  dashboardHistory,
+  headerAWB,
 };

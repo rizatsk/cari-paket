@@ -29,7 +29,7 @@ const renderTrackingDataResults = (dataTracking) => {
 
 const renderTrackingDataResultsFromHistory = (dataTracking) => {
   const contentTrackResult = document.querySelector('#contentTrackResult');
-  const historyTrackings = dataTracking.history;
+  // const historyTrackings = dataTracking.history;
 
   contentTrackResult.innerHTML = '';
   contentTrackResult.innerHTML += contenReceiptSearchResults(dataTracking);
@@ -45,6 +45,11 @@ const renderTrackingDataResultsFromHistory = (dataTracking) => {
   // ShowTrackList(button, content);
 };
 
+   
+        // contentTrackResult.innerHTML += <h1 Id=header >Detail History </h1>
+
+
+        
 const renderErrorTrackingDataResults = () => {
   const contentTrackResult = document.querySelector('#contentTrackResult');
   contentTrackResult.innerHTML = '';

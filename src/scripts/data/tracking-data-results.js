@@ -18,7 +18,7 @@ const TrackingDataResults = async (numberResi, courier) => {
       HistoryPaketInitiator.init({
         historyPaket: HistoryCekPaketIdb,
         paket: {
-          awb: dataPaket.summary.awb,
+          numberResi: dataPaket.summary.awb,
           summary: dataPaket.summary,
           detail: dataPaket.detail,
           history: dataPaket.history,

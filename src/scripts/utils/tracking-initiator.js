@@ -1,5 +1,4 @@
-/* eslint-disable new-cap */
-/* eslint-disable max-len */
+
 import TrackingDataResults from '../data/tracking-data-results';
 import {pending} from '../views/templates/template-creator';
 

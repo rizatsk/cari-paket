@@ -1,15 +1,11 @@
-// import {historyPgTemplate} from "../templates/template-creator";
-import { historyPgTemplate } from "../templates/template-creator";
+import {historyPgTemplate} from "../templates/template-creator";
 import HistoryCekPaketIdb from "../../data/historycekpaket-idb";
+// import HistoryResiIdb from "../../data/history-resi-idb";
 const HistoryPage = {
     async render() {
-     return  `
-     <p>History Cek Paket </p>
-     <div class="historyContainer">
+     return  `<div class="historyContainer">
    </div>
-   `
-
-    },
+   `},
   
     async afterRender() {
       
@@ -17,7 +13,6 @@ const HistoryPage = {
      console.log(allResi);
      
      const resiContainer = document.querySelector('.historyContainer');
-
       // console.log(resiContainer);
       allResi.forEach(resi => {
       // console.log(resi.awb);
