@@ -14,7 +14,6 @@ const TrackingInitiator = (courierButtons, enterReceiptNumber, contentTrackResul
       }
 
       contentTrackResult.scrollIntoView(); // untuk focus ketika data resi dicari
-
       contentTrackResult.innerHTML = '';
       contentTrackResult.innerHTML += pending();
 

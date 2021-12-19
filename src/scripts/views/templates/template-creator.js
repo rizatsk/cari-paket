@@ -191,12 +191,10 @@ const cardTeam = (team) => `
 
 const historyPgTemplate =(data) =>`
 
-<button>
-<p>delete All</p> 
-</button>
+
 <div class="historyContainerRow"> 
    <div class="box-resi">
-   <a href="${`#/detail/${data.awb}`}" >${data.awb}</a>
+   <a href="${`#/detail/${data.numberResi}`}" >${data.numberResi}</a>
    <button>
    <p>delete</p> 
 </button>
@@ -205,6 +203,7 @@ const historyPgTemplate =(data) =>`
 </button>
    </div>
    <div class="box-waktu">
+   
 
    `;
 //    <div class="box-waktu">
@@ -229,11 +228,11 @@ const historyPgTemplate =(data) =>`
            dapat melihat riwayat hasil pencarian paket anda secara offline.
        </p>
    </div>
+
+
    <div class="historyContainer"> </div>
    `;
-   const headerAWB = (awb)=>`
-   <h1 Id=header >Detail History ${awb}</h1>
-   `;
+
 
 export {
   pageInputResi,
@@ -248,5 +247,5 @@ export {
   cardTeam,
   historyPgTemplate,
   dashboardHistory,
-  headerAWB,
+  
 };

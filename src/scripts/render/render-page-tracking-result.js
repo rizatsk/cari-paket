@@ -33,21 +33,10 @@ const renderTrackingDataResultsFromHistory = (dataTracking) => {
 
   contentTrackResult.innerHTML = '';
   contentTrackResult.innerHTML += contenReceiptSearchResults(dataTracking);
-  // contentTrackResult.innerHTML += contentTrackList();
-
-  // historyTrackings.forEach((history) => {
-  //   document.querySelector('.track-list__body').innerHTML += trackList(history, historyTrackings);
-  // });
-
-  // const button = document.querySelector('#buttonDetailTrack');
-  // const content = document.querySelector('.content__track-list');
-
-  // ShowTrackList(button, content);
+ 
 };
 
    
-        // contentTrackResult.innerHTML += <h1 Id=header >Detail History </h1>
-
 
         
 const renderErrorTrackingDataResults = () => {

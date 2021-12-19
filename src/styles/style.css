@@ -422,3 +422,10 @@ footer p {
   color: #aaaaaa;
   font-size: 12px;
 }
+
+/* clear button */
+.clear-button{
+  padding: 40px;
+  margin: 10px auto;
+  z-index: 999;
+}

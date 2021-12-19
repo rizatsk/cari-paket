@@ -22,6 +22,7 @@ const TrackingDataResults = async (numberResi, courier) => {
           summary: dataPaket.summary,
           detail: dataPaket.detail,
           history: dataPaket.history,
+          courier : courier,
         },
       });
     } else {
