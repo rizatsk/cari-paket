@@ -1,70 +1,270 @@
 /* Ipad */
 @media screen and (min-width: 650px) {
     /* App bar */
-    .app-bar {  
+    .app-bar__container {  
       grid-template-columns: 1fr auto;
       padding: 8px 32px;
+      height: 60px;
     }
-  
-    .app-bar .app-bar__brand h1 {
+    .app-bar .app-bar__container .app-bar__brand{
+      justify-content: unset;
+    }
+    .app-bar .app-bar__container .app-bar__brand h1 {
       font-size: 1.5em;
     }
   
-    .app-bar .app-bar__menu {
+    .app-bar .app-bar__container .app-bar__menu {
       display: none;
     }
   
-    .app-bar .app-bar__navigation {
+    .app-bar .app-bar__container .app-bar__navigation {
       position: static;
       width: 100%;
+      text-align: unset;
+      height: fit-content;
     }
-  
-    .app-bar .app-bar__navigation ul li {
+    
+    .app-bar .app-bar__container .app-bar__navigation ul{
+      margin-top: 0;
+      padding-bottom: 0;
+      border-radius: 0;
+      border-bottom: none;
+    }
+
+    .app-bar .app-bar__container .app-bar__navigation ul li {
       display: inline-block;
     }
   
-    .app-bar .app-bar__navigation ul li a {
+    .app-bar .app-bar__container .app-bar__navigation ul li a {
       display: inline-block;
       width: 120px;
       text-align: center;
       margin: 0;
     }
+
+    /* Main content */
+    .col-contentInputResi p{
+      font-size: 20px;
+      width: 370px;
+    }
+
+    .col-buttonDeliveryService{
+      grid-template-columns: repeat(4, auto);
+    }
+
+   /* Receipt Search Result */
+  .col-delivery-status{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col-package-data{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col-package-data button{
+    margin-top: 20px;
+    margin-right: 70%;
+  }
+
+  /* Track List Card */
+  .contentTrackResult__start-load .header{
+    font-size: 17px;
+  }
+
+  .contentTrackResult__start-load span{
+    font-size: 14px;
+  }
+
+  .track-list__card{
+    margin: 30px 50px;
+  }
+
+  /* Nothing Data */
+  .nothingData{
+    font-size: 14px;
+  }
+
+  .nothingData h2{
+    font-size: 17px;
+  }
+
+  .loader{
+    width: 44px;
+    height: 44px;
+  }
+
+  .mainContent__cariPaket{
+    margin: 40px 120px;
+  }
+
+  .mainContent__cariPaket p {
+    font-size: 14px;
+  }
+
+  
+  /* history page*/
+  .historyContainer{
+    border: 1px solid black;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+    margin: 15px;
+    /* width: 80%; */
+  }
+  
+  .historyContainerRow{
+    display:flex;
+    width: 80%;
+    height: 40px;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    /* border-radius: 15px; */
+    margin : 10px auto;
+    /* margin: 0 auto;  */
+    
+  }
+  
+  .box-resi{
+    flex-grow: 1;
+    margin: 3px;
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    max-width: 30%;
+  }
+  .box-waktu{
+    flex-grow: 4;
+    margin: 3px;
+    /* border: 2px solid blue; */
+    border-radius: 10px;
+  }
+
+  /* About Us */
+  .aboutus__team_card-header img{
+    width: 250px;
+  }
+
+  .aboutus__content__team{
+    width: 70%;
+    margin: 20px auto;
+  }
 }
 
 /* Ipad Pro */
 @media screen and (min-width: 850px) {
-  .app-bar .app-bar__brand {
+  .app-bar .app-bar__container .app-bar__brand {
     justify-content: unset;
   }
 
-  .app-bar .app-bar__brand h1 {
+  .app-bar .app-bar__container .app-bar__brand h1 {
     font-size: 2em;
   }
 
-  .movies {
-    grid-template-columns: repeat(3, 1fr);
+  .contentTrackResult__start-load .header,
+  .mainContent__cariPaket h2,
+  .nothingData h2 {
+    font-size: 19px;
+  }
+
+  .contentTrackResult__start-load span,
+  .mainContent__cariPaket p, 
+  .nothingData p,
+  .loader-span {
+    font-size: 15px;
+  }
+
+  .receipt-search-results__container{
+    width: 60%;
+    margin: 10px auto;
+    margin-top: 40px;
+  }
+
+  .track-list__container{
+    width: 60%;
+    margin: 15px auto;
+  }
+
+  .mainContent__cariPaket{
+    text-align: center;
+    margin: 60px 200px;
+  }
+
+  /* About Us */
+  .aboutus__team_card-body h5{
+    font-size: 25px;
+  }
+  
+  .aboutus__team_card-body span{
+    font-size: 15px;
+  }
+  
+  .aboutus__team_card-body p{
+    font-size: 15px;
   }
 }
 
 /* Notebook */
 @media screen and (min-width: 1200px) {
-  .movies {
-    grid-template-columns: repeat(4, 1fr);
+   /* Receipt Search Result */
+   .receipt-search-results__container{
+    width: 60%;
   }
+
+  .track-list__container{
+    width: 60%;
+  }
+
+  .mainContent__cariPaket{
+    margin: 60px 30%;
+  }
+
+  .col-buttonDeliveryService{
+    grid-template-columns: repeat(6, auto);
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+
+  /* About Us */
+  .mainContent__aboutus{
+    margin: 40px;
+  }
+
+  .aboutus__content__team{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: fit-content;
+  }
+
+  footer p{
+   font-size: 15px; 
+  }
+
 }
 
 /* Desktop */
 @media screen and (min-width: 1600px) {
-  body{
+  .container{
     max-width: 1300px;
     margin: 0 auto;
   }
-
-  .app-bar{
-    height: 60px;
+  
+  /* Main content */
+  .col-contentInputResi p{
+    font-size: 25px;
+    width: 550px;
   }
 
-  .movies {
-    grid-template-columns: repeat(5, 1fr);
+  .receipt-search-results__container{
+    width: 45%;
+    margin-top: 50px;
+  }
+
+  .track-list__container{
+    width: 45%;
+    margin-top: 15px;
+  }
+
+  .mainContent__cariPaket{
+    margin: 60px 600px;
   }
 }

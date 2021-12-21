@@ -4,28 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#002366"/>
+    <link rel="icon" href="icons/icon-192x192.png">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" aria-disabled="true" media="all">
     <title>Cari Paket</title>
 </head>
 <body>
     <header class="app-bar">
-        <div class="app-bar__menu">
-            <button id="hamburgerButton" aria-label="Button navigasi">☰</button>
+        <div class="app-bar__container container">
+            <div class="app-bar__menu">
+                <button id="hamburgerButton" aria-label="Button navigasi">☰</button>
+            </div>
+            <div class="app-bar__brand">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="logo/logo-cekPaket-small.png">
+                    <img src="logo/logo-cekPaket-large.png" alt="Logo cek paket">
+                </picture>
+            </div>
+            <nav id="navigationDrawer" class="app-bar__navigation">
+                <ul>
+                    <li><a href="#/dashboard">Dashboard</a></li>
+                    <li><a href="#/history">History</a></li>
+                    <li><a href="#/about-us">About Us</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="app-bar__brand">
-            <h1>Cari Paket</h1>
-        </div>
-        <nav id="navigationDrawer" class="app-bar__navigation">
-            <ul>
-                <li><a href="#/dashboard">Dashboard</a></li>
-                <li><a href="#/history">History</a></li>
-                <li><a href="#/about-us">Ubout Us</a></li>
-            </ul>
-        </nav>
     </header>
     <main id="mainContent"></main>
     <footer>
         <p>Copyright @Cari Paket 2021</p>
     </footer>
-</body>
+</body>                   
 </html>

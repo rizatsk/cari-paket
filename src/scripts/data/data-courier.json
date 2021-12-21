@@ -1,0 +1,69 @@
+{
+    "courier" : [
+        {
+            "id" : "jne",
+            "courier" : "JNE",
+            "picture" : "JNE Express"
+        },
+        {
+            "id" : "sicepat",
+            "courier" : "SiCepat",
+            "picture" : "SiCepat"
+        },
+        {
+            "id" : "jnt",
+            "courier" : "J&T",
+            "picture" : "J&T Express"
+        },
+        {
+            "id" : "pos",
+            "courier" : "POS",
+            "picture" : "Pos Indonesia"
+        },
+        {
+            "id" : "tiki",
+            "courier" : "TIKI",
+            "picture" : "Tiki"
+        },
+        {
+            "id" : "anteraja",
+            "courier" : "AnterAja",
+            "picture" : "AnterAja"
+        },
+        {
+            "id" : "wahana",
+            "courier" : "Wahana",
+            "picture" : "Wahana Express"
+        },
+        {
+            "id" : "ninja",
+            "courier" : "Ninja",
+            "picture" : "Ninja Express"
+        },
+        {
+            "id" : "spx",
+            "courier" : "Shopee Express",
+            "picture" : "Shopee Express"
+        },
+        {
+            "id" : "pcp",
+            "courier" : "PCP",
+            "picture" : "PCP Express"
+        },
+        {
+            "id" : "jet",
+            "courier" : "JET",
+            "picture" : "JET Express"
+        },
+        {
+            "id" : "ide",
+            "courier" : "ID Express",
+            "picture" : "ID Express"
+        },
+        {
+            "id" : "lion",
+            "courier" : "Lion",
+            "picture" : "Lion Parcel"
+        }
+    ]
+}
