@@ -356,6 +356,64 @@
   100% { transform: rotate(360deg); }
 }
 
+/* About Us */
+/* About Us */
+.aboutus__content{
+  margin: 20px 20px;
+}
+
+.aboutus__content h2{
+  margin: 0 auto;
+  font-size: 18px;
+  border: 2px;
+  width: fit-content;
+  border-bottom: 4px solid #002366;
+}
+
+.aboutus__content__team{
+  margin-top: 20px;
+}
+
+.aboutus__team_card{
+  box-shadow: 0 0 8px 5px rgba(211, 207, 207, 0.309);
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.aboutus__team_card-header{
+  display: flex;
+  justify-content: center;
+}
+
+.aboutus__team_card-header img{
+  width: 200px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 6px 6px 10px rgb(220, 220, 220);
+}
+
+.aboutus__team_card-body{
+  margin: 10px;
+}
+
+.aboutus__team_card-body h5{
+  font-size: 18px;
+}
+
+.aboutus__team_card-body span{
+  font-size: 14px;
+  color: rgb(112, 112, 112);
+}
+
+.aboutus__team_card-body h6{
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.aboutus__team_card-body p{
+  font-size: 14px;
+}
+
 /* Footer */
 footer {
   padding: 16px;

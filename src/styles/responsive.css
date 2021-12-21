@@ -102,6 +102,16 @@
   .mainContent__cariPaket p {
     font-size: 14px;
   }
+
+  /* About Us */
+  .aboutus__team_card-header img{
+    width: 250px;
+  }
+
+  .aboutus__content__team{
+    width: 70%;
+    margin: 20px auto;
+  }
 }
 
 /* Ipad Pro */
@@ -143,6 +153,18 @@
     margin: 60px 200px;
   }
 
+  /* About Us */
+  .aboutus__team_card-body h5{
+    font-size: 25px;
+  }
+  
+  .aboutus__team_card-body span{
+    font-size: 15px;
+  }
+  
+  .aboutus__team_card-body p{
+    font-size: 15px;
+  }
 }
 
 /* Notebook */
@@ -166,6 +188,18 @@
     margin-top: 20px;
   }
 
+  /* About Us */
+  .mainContent__aboutus{
+    margin: 40px;
+  }
+
+  .aboutus__content__team{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: fit-content;
+  }
+  
   footer p{
    font-size: 15px; 
   }
