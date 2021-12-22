@@ -26,6 +26,14 @@ const renderTrackingDataResults = (dataTracking, contentTrackResult) => {
   ShowTrackList(button, content);
 };
 
+const renderTrackingDataResultsFromHistory = (dataTracking) => {
+  const contentTrackResult = document.querySelector('#contentTrackResult');
+  // const historyTrackings = dataTracking.history;
+
+  contentTrackResult.innerHTML = '';
+  contentTrackResult.innerHTML += contenReceiptSearchResults(dataTracking);
+ 
+};
 const renderErrorTrackingDataResults = () => {
   const contentTrackResult = document.querySelector('#contentTrackResult');
   contentTrackResult.innerHTML = '';
