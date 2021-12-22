@@ -9,7 +9,7 @@ Program source code for CARI PAKET Project [Capstone MSIB Bersama Dicoding - 202
 
 ## Online Preview
 
- [[Coming Soon]](#online-preview)
+ [caripaket.herokuapp.com](https://caripaket.herokuapp.com/)
 
 ## Used Technology
 
@@ -23,7 +23,7 @@ Program source code for CARI PAKET Project [Capstone MSIB Bersama Dicoding - 202
 3. Running `npm install`
 4. To update the API KEY is in the `src/scripts/globals/config.js` folder
 5. Running `npm run start-dev` for Developing
-5. Running `npm run start-prod` for Production
+5. Running `npm run build` for Production
 11. Not work? [open issue](https://github.com/rizatsk/cari-paket/issues)
 
 ## To Do Lists
