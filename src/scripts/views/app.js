@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 /* eslint-disable new-cap */
 /* eslint-disable no-unused-vars */
 import routes from '../routes/routes';
