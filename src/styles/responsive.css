@@ -168,10 +168,15 @@
   }
 
   /* Page History */
-  .clearAll-button{
-    margin-right: 60px;
+  .clear-button-container{
+    width: 700px;
+    margin: 0 auto;
   }
 
+  .clearAll-button{
+    margin: 20px 0;
+  }
+  
   .cardHistoryPaket{
     margin: 20px auto;
     width: 700px;
@@ -261,6 +266,6 @@
 
   /* Page History */
   .clearAll-button{
-    margin: 20px;
+    margin: 20px 0;
   }
 }
