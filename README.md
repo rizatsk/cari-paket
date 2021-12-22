@@ -5,7 +5,7 @@
 ![Preview Image](https://img.shields.io/github/languages/top/rizatsk/cari-paket?style=flat-square)
 
 Program source code for CARI PAKET Project [Capstone MSIB Bersama Dicoding - 2021].
-> ![Preview Image](https://github.com/theskinnyrat/si-warung-makan/raw/master/src/public/images/review-cari-paket.png)
+> ![Preview Image](https://github.com/rizatsk/cari-paket/raw/master/src/public/images/review-cari-paket.png)
 
 ## Online Preview
 
@@ -18,8 +18,8 @@ Program source code for CARI PAKET Project [Capstone MSIB Bersama Dicoding - 202
 - [API](https://binderbyte.com/) - API CEK RESI
 
 ## Getting Started
-1. Download NodeJS`
-1. Download / clone this repository to your computer local`
+1. Download NodeJS
+1. Download / clone this repository to your computer local
 3. Running `npm install`
 4. To update the API KEY is in the `src/scripts/globals/config.js` folder
 5. Running `npm run start-dev` for Developing
@@ -32,7 +32,7 @@ Program source code for CARI PAKET Project [Capstone MSIB Bersama Dicoding - 202
 - API
     - [x] ~~Running API~~
     - [x] ~~READ API~~
-- History
+- IndexedDB
     - [x] ~~Create History~~
     - [x] ~~READ History~~
     - [x] ~~Delete History~~
