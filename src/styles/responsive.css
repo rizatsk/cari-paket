@@ -53,7 +53,8 @@
     }
 
    /* Receipt Search Result */
-  .col-delivery-status{
+  .col-delivery-status,
+  .history_delivery-status{
     display: flex;
     justify-content: space-between;
   }
@@ -165,6 +166,32 @@
   .aboutus__team_card-body p{
     font-size: 15px;
   }
+
+  /* Page History */
+  .clearAll-button{
+    margin-right: 60px;
+  }
+
+  .cardHistoryPaket{
+    margin: 20px auto;
+    width: 700px;
+  }
+  
+  .contentHistory__nothing h4{
+    font-size: 18px;
+  }
+  
+  .contentHistory__nothing p{
+    font-size: 16px;
+  }
+
+  /* History Detail */
+  .contentHistoryDetail__header h3{
+    font-size: 18px;
+  }
+  .contentHistoryDetail__header p{
+    font-size: 16px;
+  }
 }
 
 /* Notebook */
@@ -219,16 +246,21 @@
   }
 
   .receipt-search-results__container{
-    width: 45%;
+    width: 60%;
     margin-top: 50px;
   }
 
   .track-list__container{
-    width: 45%;
+    width: 60%;
     margin-top: 15px;
   }
 
   .mainContent__cariPaket{
     margin: 60px 600px;
+  }
+
+  /* Page History */
+  .clearAll-button{
+    margin: 20px;
   }
 }

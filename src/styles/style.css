@@ -414,6 +414,90 @@
   font-size: 14px;
 }
 
+/* History */
+.historyContainerPage h2{
+  margin: 20px auto;
+  border-bottom: 4px solid #002366;
+  width: fit-content;
+  /* text-align: center; */
+}
+
+.clear-button-container{
+  display: grid;
+  justify-content: end;
+}
+
+.clearAll-button,
+.deleteHistory-button{
+  margin: 20px;
+  background-color: #002366;
+  padding: 13px 20px;
+  font-size: 14px;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.clearAll-button:hover,
+.deleteHistory-button:hover{
+  color: #002366;
+  background-color: white;
+  border: 2px solid #002366;
+}
+
+.contentHistory__nothing{
+  margin: 40px;
+}
+
+.contentHistory__nothing h4,
+.contentHistory__nothing p{
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.contentHistory__nothing h4{
+  font-size: 17px;
+}
+
+.contentHistory__nothing p{
+  font-size: 14px;
+}
+
+.cardHistoryPaket{
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 0 8px 5px rgba(211, 207, 207, 0.309)
+}
+
+.cardHistoryPaket__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.deleteHistory-button{
+  margin: 0px;
+}
+
+/* History detail */
+.contentHistoryDetail__header{
+  margin: 20px auto;
+  border-bottom: 4px solid #002366;
+  width: fit-content;
+}
+
+.contentHistoryDetail__header h3{
+  font-size: 17px;
+}
+.contentHistoryDetail__header p{
+  font-size: 14px;
+  text-align: center;
+}
+
 /* Footer */
 footer {
   padding: 16px;

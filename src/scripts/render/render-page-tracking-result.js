@@ -9,12 +9,11 @@ import {
 } from '../views/templates/template-creator';
 import ShowTrackList from '../utils/show-track-list';
 
-const renderTrackingDataResults = (dataTracking, courier) => {
-  const contentTrackResult = document.querySelector('#contentTrackResult');
+const renderTrackingDataResults = (dataTracking, contentTrackResult) => {
   const historyTrackings = dataTracking.history;
 
   contentTrackResult.innerHTML = '';
-  contentTrackResult.innerHTML += contenReceiptSearchResults(dataTracking, courier);
+  contentTrackResult.innerHTML += contenReceiptSearchResults(dataTracking);
   contentTrackResult.innerHTML += contentTrackList();
 
   historyTrackings.forEach((history) => {

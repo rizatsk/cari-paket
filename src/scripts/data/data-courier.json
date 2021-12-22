@@ -2,63 +2,78 @@
     "courier" : [
         {
             "id" : "jne",
-            "courier" : "JNE"
-        },
-        {
-            "id" : "sicepat",
-            "courier" : "Si Cepat"
+            "courier" : "JNE",
+            "picture" : "JNE Express"
         },
         {
             "id" : "jnt",
-            "courier" : "J&T"
+            "courier" : "J&T",
+            "picture" : "J&T Express"
+        },
+        {
+            "id" : "sicepat",
+            "courier" : "SiCepat",
+            "picture" : "SiCepat"
         },
         {
             "id" : "pos",
-            "courier" : "POS"
+            "courier" : "POS",
+            "picture" : "Pos Indonesia"
         },
         {
             "id" : "tiki",
-            "courier" : "TIKI"
+            "courier" : "TIKI",
+            "picture" : "Tiki"
         },
         {
             "id" : "anteraja",
-            "courier" : "AnterAja"
+            "courier" : "AnterAja",
+            "picture" : "AnterAja"
         },
         {
             "id" : "wahana",
-            "courier" : "Wahana"
+            "courier" : "Wahana",
+            "picture" : "Wahana Express"
         },
         {
             "id" : "ninja",
-            "courier" : "Ninja"
+            "courier" : "Ninja",
+            "picture" : "Ninja Express"
         },
         {
             "id" : "spx",
-            "courier" : "Shopee Express"
+            "courier" : "Shopee Express",
+            "picture" : "Shopee Express"
         },
         {
             "id" : "pcp",
-            "courier" : "PCP"
+            "courier" : "PCP",
+            "picture" : "PCP Express"
         },
         {
             "id" : "jet",
-            "courier" : "JET"
+            "courier" : "JET",
+            "picture" : "JET Express"
         },
         {
             "id" : "ide",
-            "courier" : "ID Express"
+            "courier" : "ID Express",
+            "picture" : "ID Express"
         },
         {
             "id" : "lion",
-            "courier" : "Lion"
+            "courier" : "Lion",
+            "picture" : "Lion Parcel"
         },
         {
             "id" : "kgx",
-            "courier" : "KGX press"
+            "courier" : "KGX press",
+            "picture" : "KGXpress"
         },
         {
             "id" : "first",
-            "courier" : "First Logistics"
+            "courier" : "First Logistics",
+            "picture" : "First Logistics"
         }
     ]
 }

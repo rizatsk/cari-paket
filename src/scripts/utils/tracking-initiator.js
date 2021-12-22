@@ -19,7 +19,7 @@ const TrackingInitiator = (courierButtons, enterReceiptNumber, contentTrackResul
       contentTrackResult.innerHTML = '';
       contentTrackResult.innerHTML += pending();
 
-      TrackingDataResults(numberResi, courier);
+      TrackingDataResults(numberResi, courier, contentTrackResult);
     });
   });
 };
