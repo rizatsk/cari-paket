@@ -1,5 +1,5 @@
 const CONFIG = {
-  KEY: '7f286d41ac68dbc4df0e2a664130f379d46d32b0d09f59ec0ddf8dfd30f46858',
+  KEY: '9ec5cb055336fc0e64d2108289fd28d6e11b2f96923b2c90cf7b896ab70d5347',
   BASE_URL: 'https://api.binderbyte.com/v1/track',
   CACHE_NAME: 'CariPaket-V1',
   DATABASE_NAME: 'cek-paket-history-database',

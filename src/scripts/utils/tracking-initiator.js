@@ -1,4 +1,5 @@
-
+/* eslint-disable new-cap */
+/* eslint-disable max-len */
 import TrackingDataResults from '../data/tracking-data-results';
 import {pending} from '../views/templates/template-creator';
 
@@ -14,10 +15,11 @@ const TrackingInitiator = (courierButtons, enterReceiptNumber, contentTrackResul
       }
 
       contentTrackResult.scrollIntoView(); // untuk focus ketika data resi dicari
+
       contentTrackResult.innerHTML = '';
       contentTrackResult.innerHTML += pending();
 
-      TrackingDataResults(numberResi, courier);
+      TrackingDataResults(numberResi, courier, contentTrackResult);
     });
   });
 };

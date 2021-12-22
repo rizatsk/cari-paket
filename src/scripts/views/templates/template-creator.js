@@ -14,7 +14,7 @@ const pageInputResi = () => `
         </div>
     </div>
 </div>
-<div id="contentTrackResult">
+<div id="contentTrackResult" class="container">
     <div class="contentTrackResult__start-load">
         <p class="header">belum ada paket</p>
         <span>masukan nomor resi dan pilih kurir yang digunakan</span>
@@ -37,7 +37,7 @@ const pageInputResi = () => `
 const buttonDeliveryService = (dataCourier) => `
 <button id="${dataCourier.id}" class="button-courier">
     <div class="button__deliveryService">
-        <img src="logo-kurir/${dataCourier.picture}-small.png" alt="Logo button ${dataCourier.courier}"> 
+        <img src="logo-kurir/${dataCourier.picture}-small.png" alt="Logo button ${dataCourier.picture}"> 
         <span>${dataCourier.courier}</span>
     </div> 
 </button>
@@ -177,7 +177,7 @@ const cardTeam = (team) => `
     <div class="aboutus__team_card-header">
         <img src="images/${team.photo}" alt="${team.photo}">
     </div>
-    <div class="aboutus__teamw_card-body">
+    <div class="aboutus__team_card-body">
         <h5>${team.nama}</h5>
         <span>${team.pekerjaan}</span>
         <h6> 
@@ -188,72 +188,64 @@ const cardTeam = (team) => `
 </div>
 `;
 
-
-const historyPgTemplate =(dataTracking) =>`
-
-<div class="hisotryContainerParent">
-<div class="historyContainerRow"> 
-
-   <div class="box-resi">
-   <a href="${`#/detail/${dataTracking.numberResi}`}" >${dataTracking.numberResi}</a>
-   </div>
-        <button class="delete-button" id="${dataTracking.numberResi}">
-            <p>delete</p> 
-        </button>
-</div>
-
-<div class="minireport-container">
-        <div class="col-delivery-status">
-            <div class="delivery-status">
-                ${dataTracking.history[0].desc}
-            </div>
-            <div class="delivery-status__courier">
-                <span>${dataTracking.summary.courier}</span>
-            <img src="logo-kurir/${dataTracking.summary.courier}-small.png" alt="Logo kurir ${dataTracking.summary.courier}">
-        </div>
-</div>
+const pageHistory = () => `
+<div class="container historyContainerPage">
+    <h2>History Paket</h2> 
+    <div class="clear-button-container">
+        
+    </div>
+    <div class="contentHistory">
+        
+    </div>
 </div>
 `;
 
+const buttonClearAllHistory = () => `
+<button class="clearAll-button">
+    Clear All <i class="bi bi-trash2-fill"></i>
+</button>
+`;
 
-//    <div class="box-waktu">
-// </div>
-   const dashboardHistory = () => `
-   <h1 Id=header >Detail History /kode awb/</h1>
-   <div id="contentTrackResult">
-       <div class="contentTrackResult__start-load">
-           <p class="header">belum ada paket</p>
-           <span>masukan nomor resi dan pilih kurir yang digunakan</span>
-       </div>
-   </div>
-   <div class="mainContent__cariPaket">
-       <h2>Cari Paket</h2>
-       <p>Mencari paket dengan mudah dalam 1 halaman website</p>
-       <p>dapat mencari paket secara offline kalau sudah pernah mencarinya</p>
-       <p>dapat mencari paket di berbagai jasa pengiriman yang tersedia tanpa 
-           lagi harus membuka banyak website untuk cek paket di setiap masing 
-           masing jasa pengiriman.
-       </p> 
-       <p>menyediakan riwayat pencarian paket.
-           dapat melihat riwayat hasil pencarian paket anda secara offline.
-       </p>
-   </div>
+const contentHistoryNothing = () => `
+<div class="contentHistory__nothing">
+    <h4> tidak ada history </h4>
+    <p>silahkan cari paket sesuai dengan jasa pengiriman</p>
+</div>
+`;
 
-
-   <div class="historyContainer"> </div>
-   `;
-
-
-   const minireport = (dataTracking) =>`
-   <div class="col-delivery-status">
+const pageDataHistoryPaket = (resi) => `
+<div class="cardHistoryPaket">
+    <div class="cardHistoryPaket__header">
+        <a href="#/history-detail/${resi.numberResi}">${resi.numberResi}</a>
+        <button class="deleteHistory-button" id="${resi.numberResi}">Delete</button>
+    </div>
+    <div class="cardHistoryPaket__body">
+        <div class="history_delivery-status">
             <div class="delivery-status">
-                ${dataTracking.history[0].desc}
+                ${resi.history[0].desc}
             </div>
             <div class="delivery-status__courier">
-                <span>${dataTracking.summary.courier}</span>
-                <img src="logo-kurir/${dataTracking.summary.courier}-small.png" alt="Logo kurir ${dataTracking.summary.courier}">
+                <span>${resi.summary.courier}</span>
+                <img src="logo-kurir/${resi.summary.courier}-small.png" alt="Logo kurir ${resi.summary.courier}">
             </div>
-        </div>`;
+        </div>
+    </div>
+</div>
+`;
+
+const pageDataHistoryDetailPaket = () => `
+<div class="container contentHistoryDetail">
+</div>
+`;
+
+const contentHistoryDetail = (nomorResi) => `
+<div class="contentHistoryDetail__header">
+    <h3>History paket</h3>
+    <p>${nomorResi}</p>
+</diV>
+<div class="historyDetailContainerPage">
+</div>
+`;
 
 export {
   pageInputResi,
@@ -266,8 +258,10 @@ export {
   pending,
   pageAboutUs,
   cardTeam,
-  historyPgTemplate,
-  dashboardHistory,
-  minireport,
-  
+  pageHistory,
+  buttonClearAllHistory,
+  contentHistoryNothing,
+  pageDataHistoryPaket,
+  pageDataHistoryDetailPaket,
+  contentHistoryDetail,
 };

@@ -1,44 +1,37 @@
-import {historyPgTemplate,minireport} from "../templates/template-creator";
-import HistoryCekPaketIdb from "../../data/historycekpaket-idb";
-import clearAll from "../../utils/clear-history-initiator";
-import deleteAHistory from "../../utils/delete-history-initiator";
+/* eslint-disable max-len */
+import {buttonClearAllHistory, contentHistoryNothing, pageDataHistoryPaket, pageHistory} from '../templates/template-creator';
+import HistoryCekPaketIdb from '../../data/historycekpaket-idb';
+import clearAll from '../../utils/clear-all-historyPaket';
+import deleteHistory from '../../utils/delete-historyPaket';
 
-
-// import HistoryResiIdb from "../../data/history-resi-idb";
 const HistoryPage = {
-    async render() {
-     return  `<div class="historyContainerPage">
-    <div class="clear-button-container"> 
-     <button class="clear-button"> Clear All </button>
-     </div>
-     <div class="contentHistory">
-     </div>
-   </div>
-   
-   `},
-  
-    async afterRender() {
-      const buttonclear = document.querySelector('.clear-button');
-      
-      
-     const allResi = await HistoryCekPaketIdb.getAllPaket();
-     console.log(allResi);
-     
-     const resiContainer = document.querySelector('.contentHistory');
+  async render() {
+    return pageHistory();
+  },
 
+  async afterRender() {
+    const allResi = await HistoryCekPaketIdb.getAllPaket();
+    const contentButtonClearAll = document.querySelector('.clear-button-container');
+    const resiContainer = document.querySelector('.contentHistory');
 
-      allResi.forEach(resi => {  
-        resiContainer.innerHTML += historyPgTemplate(resi);
-        
+    contentButtonClearAll.innerHTML = '';
+    resiContainer.innerHTML = contentHistoryNothing();
+
+    if (allResi.length > 0) {
+      contentButtonClearAll.innerHTML += buttonClearAllHistory();
+      resiContainer.innerHTML = '';
+
+      allResi.forEach((resi) => {
+        resiContainer.innerHTML += pageDataHistoryPaket(resi);
       });
-      const delbut= document.querySelectorAll('.delete-button');
-      // console.log(delbut);
-      deleteAHistory(delbut);
-      clearAll(buttonclear); 
 
-      
-  
-    },
-  };
-  
-  export default HistoryPage;
+      const buttonClearAllHistoryPaket = document.querySelector('.clearAll-button');
+      const buttonDeleteHistoryPaket = document.querySelectorAll('.deleteHistory-button');
+
+      clearAll(buttonClearAllHistoryPaket, resiContainer);
+      deleteHistory(buttonDeleteHistoryPaket, resiContainer);
+    }
+  },
+};
+
+export default HistoryPage;

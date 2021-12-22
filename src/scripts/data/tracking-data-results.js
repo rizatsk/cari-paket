@@ -8,13 +8,13 @@ import {
 import HistoryPaketInitiator from '../utils/history-paket-initiator';
 import HistoryCekPaketIdb from './historycekpaket-idb';
 
-const TrackingDataResults = async (numberResi, courier) => {
+const TrackingDataResults = async (numberResi, courier, contentTrackResult) => {
   try {
     const respone = await fetch(API_ENDPOINT.TRACKING(numberResi, courier));
     const responseJson = await respone.json();
     const dataPaket = responseJson.data;
     if (responseJson.data) {
-      renderTrackingDataResults(responseJson.data);
+      renderTrackingDataResults(responseJson.data, contentTrackResult);
       HistoryPaketInitiator.init({
         historyPaket: HistoryCekPaketIdb,
         paket: {
@@ -22,7 +22,7 @@ const TrackingDataResults = async (numberResi, courier) => {
           summary: dataPaket.summary,
           detail: dataPaket.detail,
           history: dataPaket.history,
-          courier : courier,
+          courier: courier,
         },
       });
     } else {

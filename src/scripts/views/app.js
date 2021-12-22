@@ -6,11 +6,12 @@ import DrawerInitiator from '../utils/drawer-inititator';
 
 /* eslint-disable require-jsdoc */
 class App {
-  constructor({button, drawer, content}) {
+  constructor({button, drawer, content, buttonOpen, buttonClose}) {
     this._button = button;
     this._drawer = drawer;
     this._content = content;
-
+    this._buttonOpen = buttonOpen;
+    this._buttonClose = buttonClose;
     this._initialAppShell();
   }
 
@@ -19,6 +20,8 @@ class App {
       button: this._button,
       drawer: this._drawer,
       content: this._content,
+      buttonOpen: this._buttonOpen,
+      buttonClose: this._buttonClose,
     });
   }
 

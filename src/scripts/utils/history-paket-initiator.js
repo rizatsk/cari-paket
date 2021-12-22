@@ -11,4 +11,5 @@ const HistoryPaketInitiator = {
   },
 
 };
+
 export default HistoryPaketInitiator;

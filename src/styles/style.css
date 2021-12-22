@@ -61,7 +61,7 @@
     position: absolute;
     top: 70px;
     left: -110%;
-    width: 96%;
+    width: 98%;
     transition: all 0.3s;
     padding: 8px;
     background-color: #002366;
@@ -169,6 +169,7 @@
 .button__deliveryService img{
   margin-right: 8px;
   margin-left: 3px;
+  width: 30px;
 }
 
 /* Receipt Search Result */
@@ -412,6 +413,90 @@
   font-size: 14px;
 }
 
+/* History */
+.historyContainerPage h2{
+  margin: 20px auto;
+  border-bottom: 4px solid #002366;
+  width: fit-content;
+  /* text-align: center; */
+}
+
+.clear-button-container{
+  display: grid;
+  justify-content: end;
+}
+
+.clearAll-button,
+.deleteHistory-button{
+  margin: 20px;
+  background-color: #002366;
+  padding: 13px 20px;
+  font-size: 14px;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.clearAll-button:hover,
+.deleteHistory-button:hover{
+  color: #002366;
+  background-color: white;
+  border: 2px solid #002366;
+}
+
+.contentHistory__nothing{
+  margin: 40px;
+}
+
+.contentHistory__nothing h4,
+.contentHistory__nothing p{
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.contentHistory__nothing h4{
+  font-size: 17px;
+}
+
+.contentHistory__nothing p{
+  font-size: 14px;
+}
+
+.cardHistoryPaket{
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 0 8px 5px rgba(211, 207, 207, 0.309)
+}
+
+.cardHistoryPaket__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.deleteHistory-button{
+  margin: 0px;
+}
+
+/* History detail */
+.contentHistoryDetail__header{
+  margin: 20px auto;
+  border-bottom: 4px solid #002366;
+  width: fit-content;
+}
+
+.contentHistoryDetail__header h3{
+  font-size: 17px;
+}
+.contentHistoryDetail__header p{
+  font-size: 14px;
+  text-align: center;
+}
+
 /* Footer */
 footer {
   padding: 16px;
@@ -422,81 +507,3 @@ footer p {
   color: #aaaaaa;
   font-size: 12px;
 }
-
-.clear-button-container{
-  display: flex;
-  /* border: 1px solid green; */
- align-items:right;
-
-}
-/* clear button */
-.clear-button{
-  padding: 5px;
-  margin: 5px auto;
-  /* border: 1px solid blue; */
-  flex-grow: .3;
- 
-}
-
-
-  /* history page*/
-  .historyContainerPage{
-    border: 1px solid black;
-    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
-    margin: 15px;
-    border-radius: 5px ;
-  
-    /* width: 80%; */
-  }
-  
-  .historyContainerRow{
-    display:flex;
-    flex-direction: row;
-    width: 80%;
-    height: 40px;
-    /* border: 1px solid black; */
-    padding: 10px;
-    /* border-radius: 15px; */
-    margin : 10px auto;
-    /* margin: 0 auto;  */
-    justify-content: space-between ;
-   
-    
-  }
-
-  .hisotryContainerParent{
-    /* border: 2px solid green; */
-    /* align-content: center; */
-    margin: 0 auto;
-    margin-bottom: 5px;
-  
-  }
-  .minireport-container{
-    /* border: 2px solid red; */
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  .box-resi{
-    flex-grow: 1;
-    margin: 3px;
-    /* border: 2px solid red; */
-    border-radius: 10px;
-    max-width: 30%;
-    justify-content: space-between ;
-
-  }
-  .box-waktu{
-    flex-grow: 4;
-    margin: 3px;
-    /* border: 2px solid blue; */
-    border-radius: 10px;
-  }
-
-  .delete-button{
-    /* flex-grow: 1; */
-    width: auto;
-    padding: 3px;
-    border-radius: 5px;
-  }
-

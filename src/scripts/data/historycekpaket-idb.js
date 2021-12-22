@@ -25,7 +25,7 @@ const HistoryCekPaketIdb = {
   async deletePaket(numberResi) {
     return (await dbPromise).delete(OBJECT_STORE_NAME, numberResi);
   },
-  async clearPaket() {
+  async clearAllPaket() {
     return (await dbPromise).clear(OBJECT_STORE_NAME);
   },
 };

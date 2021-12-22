@@ -9,8 +9,7 @@ import {
 } from '../views/templates/template-creator';
 import ShowTrackList from '../utils/show-track-list';
 
-const renderTrackingDataResults = (dataTracking) => {
-  const contentTrackResult = document.querySelector('#contentTrackResult');
+const renderTrackingDataResults = (dataTracking, contentTrackResult) => {
   const historyTrackings = dataTracking.history;
 
   contentTrackResult.innerHTML = '';
@@ -35,10 +34,6 @@ const renderTrackingDataResultsFromHistory = (dataTracking) => {
   contentTrackResult.innerHTML += contenReceiptSearchResults(dataTracking);
  
 };
-
-   
-
-        
 const renderErrorTrackingDataResults = () => {
   const contentTrackResult = document.querySelector('#contentTrackResult');
   contentTrackResult.innerHTML = '';
@@ -55,5 +50,4 @@ export {
   renderTrackingDataResults,
   renderErrorTrackingDataResults,
   renderNothingInternet,
-  renderTrackingDataResultsFromHistory,
 };

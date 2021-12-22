@@ -6,14 +6,14 @@
             "picture" : "JNE Express"
         },
         {
-            "id" : "sicepat",
-            "courier" : "SiCepat",
-            "picture" : "SiCepat"
-        },
-        {
             "id" : "jnt",
             "courier" : "J&T",
             "picture" : "J&T Express"
+        },
+        {
+            "id" : "sicepat",
+            "courier" : "SiCepat",
+            "picture" : "SiCepat"
         },
         {
             "id" : "pos",
@@ -64,6 +64,16 @@
             "id" : "lion",
             "courier" : "Lion",
             "picture" : "Lion Parcel"
+        },
+        {
+            "id" : "kgx",
+            "courier" : "KGX press",
+            "picture" : "KGXpress"
+        },
+        {
+            "id" : "first",
+            "courier" : "First Logistics",
+            "picture" : "First Logistics"
         }
     ]
 }
