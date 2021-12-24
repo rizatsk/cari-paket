@@ -12,7 +12,6 @@ INTRODUCTION
 --------------------------
 Cari Paket adalah sebuah Aplikasi Cek Resi dari berbagai jasa pengiriman dalam 1 halaman website  yang dapat di install pada homesceeen. 
 
-
 FEATURE
 --------------------------
 - Fitur melihat proses pengiriman barang dengan memasukan kode resi atau awb yang di inginkan
@@ -22,7 +21,7 @@ FEATURE
 INSTALLATION
 -------------------------
 - Men-download NodeJS
-- Men-download / clone this repository to your computer local
+- Men-download / clone repository ini ke computer local
 - Run npm install
 - Meng-update  API KEY terdapat pada folder  src/scripts/globals/config.js folder
 - Run  npm run start-dev untuk Developing
